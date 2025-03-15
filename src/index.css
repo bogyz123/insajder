@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+html,
+body,
+#root,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Raleway, sans-serif;
+  min-width: 100% !important;
+  min-height: 100vh !important;
+  overflow: auto;
+}
+@font-face {
+  font-family: "Vampire Wars"; /* Define the font family name */
+  src: url("./assets/wars.ttf") format("truetype"); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.testFont {
+  font-family: "Vampire Wars", sans-serif; /* Use the same font family name */
+}
+.burger {
+  display: none;
+}
+.font-main {
+  font-family: Raleway, sans-serif;
+}
+@theme {
+  --color-gold: #ffd700;
+  --color-card: #102330;
+}
+.main-gradient {
+  background: hsla(224, 71%, 4%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(224, 71%, 4%, 1) 65%,
+    hsla(224, 60%, 14%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(224, 71%, 4%, 1) 65%,
+    hsla(224, 60%, 14%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(224, 71%, 4%, 1) 65%,
+    hsla(224, 60%, 14%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#030712", endColorstr="#0E1938", GradientType=1 );
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+:root {
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7f00ff;
+  --card2-gradient-color2: #e100ff;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
+}
+.card-wrap {
+  width: 220px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.card-wrap:hover {
+  transform: scale(1.03);
+}
+.card-header {
+  height: 200px;
+  width: 100%;
+  background: red;
+  border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+}
+
+.card-header i {
+  color: #fff;
+  font-size: 72px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card-text {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.card-btn {
+  border: none;
+  border-radius: 100px;
+  padding: 5px 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.card-header.one {
+  background: linear-gradient(
+    to bottom left,
+    var(--card1-gradient-color1),
+    var(--card1-gradient-color2)
+  );
+}
+.card-header.two {
+  background: linear-gradient(
+    to bottom left,
+    var(--card2-gradient-color1),
+    var(--card2-gradient-color2)
+  );
+}
+.card-header.three {
+  background: linear-gradient(
+    to bottom left,
+    var(--card3-gradient-color1),
+    var(--card3-gradient-color2)
+  );
+}
+.card-header.four {
+  background: linear-gradient(
+    to bottom left,
+    var(--card4-gradient-color1),
+    var(--card4-gradient-color2)
+  );
+}
+
+.card-btn.one {
+  background: linear-gradient(
+    to left,
+    var(--card1-gradient-color1),
+    var(--card1-gradient-color2)
+  );
+}
+.card-btn.two {
+  background: linear-gradient(
+    to left,
+    var(--card2-gradient-color1),
+    var(--card2-gradient-color2)
+  );
+}
+.card-btn.three {
+  background: linear-gradient(
+    to left,
+    var(--card3-gradient-color1),
+    var(--card3-gradient-color2)
+  );
+}
+.card-btn.four {
+  background: linear-gradient(
+    to left,
+    var(--card4-gradient-color1),
+    var(--card4-gradient-color2)
+  );
+}
