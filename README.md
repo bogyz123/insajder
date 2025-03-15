@@ -9,4 +9,4 @@ Get Premium sports betting tips, track your wins/losses, chat with other people,
 
 ## in production (20%/100%) - mongodb, express, react, node, tailwind, chart.js, redux/toolkit
 
-!(https://github.com/bogyz123/insajder/blob/main/betOne.png)
+(https://github.com/bogyz123/insajder/blob/main/betOne.png)
